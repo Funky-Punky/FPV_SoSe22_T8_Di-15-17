@@ -14,4 +14,7 @@ val find_by_id : int -> database -> student list
 
 val find_by_last_name : string -> database -> student list
 
+val find_by_last_name_tail_rec : string -> database -> student list
+
+
 val miniTum : database
