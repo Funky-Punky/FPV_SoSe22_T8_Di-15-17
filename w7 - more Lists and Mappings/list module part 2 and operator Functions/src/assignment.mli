@@ -4,3 +4,4 @@ val bigger_than_two : int list
 val sum : int
 val rev : int list -> int list
 val sum_cooler : int
+val (+) : bool -> bool -> bool
