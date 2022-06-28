@@ -12,7 +12,7 @@ let rec ltake n (Cons(x, f)) =
   else x :: (ltake (n - 1) (f ()))
 
 let rec lfilter pred (Cons(x, f)) = 
-  if pred x then Cons(x, fun () -> lfilter pred (f ())) 
+  if pred x then          Cons(x, fun () -> lfilter pred (f ())) 
   else lfilter pred (f ())
 
 
