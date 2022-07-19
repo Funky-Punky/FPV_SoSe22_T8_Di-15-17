@@ -1,0 +1,13 @@
+let rec summa l = match l with [] -> 0
+    | h::t -> h + summa t
+
+let rec sum l acc = match l with [] -> acc
+    | h::t -> sum t (h+acc)
+
+let rec mul i j acc = if i <= 0 then acc
+  else mul (i-1) j (j+acc)
+
+
+
+To prove:
+        mul c (sum l 0) 0 = c * summa l
